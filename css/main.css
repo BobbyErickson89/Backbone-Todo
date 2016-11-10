@@ -1,0 +1,91 @@
+nav div{
+  display: inline-block;
+  padding: 10px;
+}
+
+body, #todo-form input {
+  background: #46549E;
+  color: white;
+}
+
+#main-content, nav div, input
+{
+  font-family: 'Raleway', serif;
+  /*font-weight: lighter;*/
+}
+
+::-webkit-input-placeholder {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+:-moz-placeholder {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+::-moz-placeholder {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+:-ms-input-placeholder {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/*CODE INVOLVING THE CREATE TODO INPUTS*/
+#todo-form {
+  margin-top: 5em;
+}
+
+#todo-form input {
+  display: block;
+  margin: 2.5em auto;
+  width: 70%;
+  height: 30px;
+  font-size: 1em;
+  border: none;
+  border-bottom: 1px solid #7D87B8;
+}
+
+#todo-form input:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+}
+
+#submit-todo {
+  text-align: center;
+  background: #2EBAEE;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  cursor: pointer;
+}
+
+
+/*CODE INVOLVING MAIN PAGE*/
+.todo-container {
+  background: #6773B6;
+  width: 80%;
+  margin: 1.5em auto;
+  padding: 1em;
+}
+
+.todo-container {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.todo-title, .todo-time {
+  display: inline-block;
+}
+
+.todo-title {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.todo-time {
+  float: right;
+}
+

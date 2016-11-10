@@ -1,0 +1,29 @@
+{
+  "name": "backbone_todo",
+  "version": "1.0.0",
+  "description": "Practicing backbone with a todo app",
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "express": "^4.13.4",
+    "handlebars": "^4.0.5",
+    "jquery": "^2.2.4",
+    "moment": "^2.13.0",
+    "underscore": "^1.8.3",
+    "mysql": "^2.5.4"
+  },
+  "devDependencies": {
+    "handlebar-rider": "https://github.com/cif/handlebar-rider"
+  },
+  "author": "Bobby Erickson",
+  "scripts": {
+    "start:node": "node app.js",
+    "start:node:watch": "nodemon app.js",
+    "build:coffee": "coffee --compile *.coffee",
+    "build:coffee:watch": "coffee --compile --watch *.coffee ./js",
+    "build:templates": "touch public/js/templates.js && ./node_modules/.bin/handlebar-rider -i templates/ -o js/templates.js",
+    "build:templates:watch": "touch js/templates.js && ./node_modules/.bin/handlebar-rider -i templates/ -o js/templates.js -w",
+    "build:browserify": "browserify js/views/views.js -o js/modules.js",
+    "build:watchify": "watchify js/views/views.js -o js/modules.js"
+  },
+  "license": "ISC"
+}

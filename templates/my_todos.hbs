@@ -1,0 +1,13 @@
+{{#if todos}}
+    {{#each todos}}
+        <div data-id={{id}} class="todo-container">
+            <div class="todo-title">{{title}}</div>
+            <div class="todo-time">{{time}}</div>
+            <div>{{date}}</div>
+            <div>{{completed}}</div>
+            <input type="checkbox" class="todo-checkbox">
+        </div>
+    {{/each}}
+{{else}}
+    <div>Nothing planned ATM</div>
+{{/if}}
